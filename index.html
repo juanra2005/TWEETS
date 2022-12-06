@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>GENERADOR DE TWEETS</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navegador">
+      <h1 class="titu">Bienvenido</h1>
+      <ul class="lista">
+        <div class="contenedor_links">
+          <div>
+            <p id="nombre"></p>
+          </div>
+          <div>
+          </div>
+          <div class="bola">
+            <p id="nombreInicial">J</p>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="form">
+      <label for="">Digite su nombre</label>
+      <input type="text" name="" id="txt-name" placeholder="Insert your name">
+
+      <label for="">Comentario</label>
+      <textarea name="comentario" id="comentario" rows="5" cols="60" maxlength="280"
+        onkeyup="contadorletras();"></textarea>
+
+      <strong>
+        <p id="contador">Contador → 280</p>
+      </strong>
+
+      <button id="btn-name">Publicar</button>
+
+      <button id="btn-convert">Mayúsculas</button>
+
+    </div>
+
+  </div>
+
+  <div class="container1">
+    <p id="result">Su comentario es →</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
